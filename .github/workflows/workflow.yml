@@ -33,9 +33,10 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: dockerfile
+          file: app/dockerfile
           push: true
           tags: gcr.io/${{ secrets.GCP_PROJECT_ID }}/medli:latest
+    
 
       - name: Deploy to Google Cloud Run
         run: |
