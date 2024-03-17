@@ -34,7 +34,7 @@ jobs:
           gcloud run deploy your-app \
             --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/medli:latest \
             --platform managed \
-            --region us-west1 \  # Replace 'YOUR_REGION' with your Google Cloud region
+            --region us-west1 \
             --allow-unauthenticated
 
 
