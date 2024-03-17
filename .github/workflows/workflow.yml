@@ -27,7 +27,7 @@ jobs:
           context: .
           file: ./Dockerfile  # Path to your Dockerfile
           push: true
-          tags: gcr.io/${{ secrets.GCP_PROJECT_ID }}/your-app:latest  # Replace 'your-app' with your app name
+          tags: gcr.io/${{ secrets.GCP_PROJECT_ID }}/medli:latest  # Replace 'your-app' with your app name
 
       - name: Deploy to Google Cloud Run
         run: |
